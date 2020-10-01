@@ -48,12 +48,14 @@ namespace CookieClicker
                     MyLabel.Text = "Oh look I'm here now";
                     break;
             }
+            ClickerButton.Text = "Clicked " + count + " times.";
             var rand = new Random();
-            await Cookie.TranslateTo(rand.Next(-200, 201), rand.Next(-200, 151), easing: Easing.Linear);
-            //Cookie.TranslationX = Cookie.X + rand.Next(-75, 0);
-            //Cookie.TranslationY = Cookie.Y + rand.Next(-75, 0);
+            await Cookie.TranslateTo(rand.Next(-200, 201), 
+                                     rand.Next(-200, 151), 
+                                     easing: Easing.Linear); 
             await Cookie.ScaleTo(1.2, 125U, Easing.CubicInOut);
             await Cookie.ScaleTo(1.0, 125U, Easing.CubicInOut);
+            
         }
     }
 }
