@@ -5,14 +5,14 @@
 
     <StackLayout>
         <!-- Place new controls here -->
+        <Label x:Name="MyLabel" Text="Welcome to Xamarin.Forms!" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" FontSize="36" Margin="0,80"  />
         <Image x:Name="Cookie" Source="cookie.png" HeightRequest="150" WidthRequest="150" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
             <Image.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
             </Image.GestureRecognizers>
         </Image>
-        <Label x:Name="MyLabel" Text="Welcome to Xamarin.Forms!" 
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" />
         <Button Text="Press Me" Clicked="Button_Clicked"/>
     </StackLayout>
 
